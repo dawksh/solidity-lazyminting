@@ -1,15 +1,11 @@
-# Basic Sample Hardhat Project
+# Lazy Minting Smart Contract
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+A smart contract to Lazy mint NFTs.
 
-Try running some of the following tasks:
+## Getting Started
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+Goto /contracts/LazyMintingNFT.sol and change the \_baseURI's return to your base api URL.
+
+To deploy create a .env or change the `hardhat.config.js` in the root directory's entries with corresponding network's deployment URL and your private key.
+
+Goto terminal and type `npx hardhat run scripts/deploy.js --network {Your desired network as configured in config file}` and hit enter. You should have your contract address in your terminal window.
